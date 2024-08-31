@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from './logo.svg'; 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl font-bold">
-          <a href="/">MyLogo</a>
+          <a href="/">
+            <img src={logo} alt="Zj School" className="logo w-28 lg:w-40 md:w-32 sm:w-28" />
+          </a>
         </div>
 
         {/* Menu */}
